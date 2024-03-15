@@ -165,6 +165,13 @@
                     <artifactId>jetty-maven-plugin</artifactId>
                     <version>8.0.0.M1</version>
                 </plugin>
+
+                <!-- Added SonarQube plugin -->
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>3.11.0.3922</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
@@ -205,29 +212,4 @@
 
             <dependency>
                 <groupId>org.hamcrest</groupId>
-                <artifactId>hamcrest-library</artifactId>
-                <version>1.2.1</version>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.mockito</groupId>
-                <artifactId>mockito-core</artifactId>
-                <version>1.8.5</version>
-                <scope>test</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
-    <scm>
-        <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
-        <developerConnection>scm:git:git@github.com:jleetutorial/maven-project.git</developerConnection>
-        <tag>HEAD</tag>
-        <url>http://github.com/jleetutorial/maven-project</url>
-    </scm>
-
-    <prerequisites>
-        <maven>3.0.3</maven>
-    </prerequisites>
-
-</project>
+                <artifactId>hamcrest-library</artifactId
